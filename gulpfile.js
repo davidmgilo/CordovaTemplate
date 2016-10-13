@@ -17,5 +17,9 @@ elixir.config.publicPath = 'www';
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js');
+    .webpack('app.js')
+    .scripts([
+        'hello.js',
+        './www/js/app.js'
+    ]);
 });
