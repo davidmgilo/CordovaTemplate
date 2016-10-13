@@ -6,3 +6,7 @@ window.$ = window.jQuery = require('jquery');
 var _  = require('underscore');
 
 window._ = require('underscore');
+
+$(document).ready(function(){
+    $("#msgid").html("This is Hello World by JQuery");
+});
